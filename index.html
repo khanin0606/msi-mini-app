@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MSI – Marketing System Islam</title>
+  <style>
+    body {
+      background-color: #000000; /* Чёрный фон */
+      color: #FFFFFF; /* Белый текст */
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      font-size: 32px;
+      margin-top: 50px;
+    }
+    p.offer {
+      font-size: 18px;
+      margin: 20px 0;
+      line-height: 1.4;
+    }
+    .cta-button {
+      display: inline-block;
+      padding: 15px 30px;
+      font-size: 18px;
+      color: #000000; /* Текст кнопки */
+      background-color: #F9A825; /* Акцентный жёлто-оранжевый */
+      text-decoration: none;
+      border-radius: 5px;
+      margin-bottom: 40px;
+    }
+    .nav-menu {
+      display: flex;
+      justify-content: space-around;
+      border-top: 1px solid #FFFFFF;
+      padding-top: 15px;
+      margin-bottom: 20px;
+    }
+    .nav-menu a {
+      color: #F9A825;
+      text-decoration: none;
+      font-size: 16px;
+    }
+    .nav-menu a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Заголовок и оффер -->
+    <h1>MSI – Marketing System Islam</h1>
+    <p class="offer">
+      MSI – маркетинговое агентство нового поколения,<br>
+      создающее автоматизированные системы продаж через Instagram, Telegram и автоворонки.<br>
+      Мы строим готовые системы, которые работают 24/7 без хаотичных запусков!
+    </p>
+    
+    <!-- Кнопка CTA -->
+    <a class="cta-button" href="consultation.html">Получить консультацию</a>
+    
+    <!-- Навигационное меню -->
+    <div class="nav-menu">
+      <a href="services.html">Услуги</a>
+      <a href="cases.html">Кейсы</a>
+      <a href="free-materials.html">Бесплатные материалы</a>
+    </div>
+  </div>
+  
+  <!-- Инициализация Telegram Web Apps API (если понадобится) -->
+  <script>
+    if (window.Telegram && Telegram.WebApp) {
+      Telegram.WebApp.ready();
+    }
+  </script>
+</body>
+</html>
