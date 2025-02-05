@@ -2,84 +2,94 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MSI – Marketing System Islam</title>
+  <!-- Подключение Google Fonts (Roboto) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
+    /* Основные стили */
     body {
-      background-color: #000000; /* Чёрный фон */
-      color: #FFFFFF; /* Белый текст */
-      font-family: Arial, sans-serif;
+      background-color: #000000;
+      color: #FFFFFF;
+      font-family: 'Roboto', sans-serif;
       margin: 0;
       padding: 0;
+      line-height: 1.6;
     }
     .container {
-      max-width: 600px;
+      max-width: 800px;
       margin: 0 auto;
       padding: 20px;
-      text-align: center;
     }
-    h1 {
-      font-size: 32px;
-      margin-top: 50px;
+    /* Заголовки жирные и с отступами */
+    h1, h2, h3 {
+      font-weight: 700;
+      margin-bottom: 20px;
     }
-    p.offer {
-      font-size: 18px;
-      margin: 20px 0;
-      line-height: 1.4;
+    p {
+      margin-bottom: 20px;
     }
+    /* Стиль кнопки CTA */
     .cta-button {
       display: inline-block;
       padding: 15px 30px;
       font-size: 18px;
-      color: #000000; /* Текст кнопки */
-      background-color: #F9A825; /* Акцентный жёлто-оранжевый */
+      font-weight: 700;
+      color: #000000;
+      background-color: #F9A825;
+      border: none;
+      border-radius: 8px;
       text-decoration: none;
-      border-radius: 5px;
-      margin-bottom: 40px;
+      transition: background-color 0.3s ease;
     }
+    .cta-button:hover {
+      background-color: #d18d1f;
+    }
+    /* Навигационное меню */
     .nav-menu {
       display: flex;
       justify-content: space-around;
+      margin-top: 40px;
       border-top: 1px solid #FFFFFF;
-      padding-top: 15px;
-      margin-bottom: 20px;
+      padding-top: 20px;
     }
     .nav-menu a {
+      font-size: 16px;
+      font-weight: 700;
       color: #F9A825;
       text-decoration: none;
-      font-size: 16px;
     }
     .nav-menu a:hover {
       text-decoration: underline;
+    }
+    /* Пример маркетинговой фигуры (изображение воронки) */
+    .marketing-shape {
+      margin: 40px auto;
+      width: 100%;
+      max-width: 600px;
+      height: 150px;
+      background: url('https://via.placeholder.com/600x150?text=Marketing+Funnel') no-repeat center;
+      background-size: contain;
+      opacity: 0.8;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <!-- Заголовок и оффер -->
     <h1>MSI – Marketing System Islam</h1>
-    <p class="offer">
-      MSI – маркетинговое агентство нового поколения,<br>
-      создающее автоматизированные системы продаж через Instagram, Telegram и автоворонки.<br>
-      Мы строим готовые системы, которые работают 24/7 без хаотичных запусков!
+    <p>
+      Мы создаем премиальные автоматизированные системы продаж через Instagram, Telegram и автоворонки.<br>
+      Наши решения помогают экспертам, коучам и онлайн-бизнесам увеличить доходы и оптимизировать маркетинг.
     </p>
-    
-    <!-- Кнопка CTA -->
     <a class="cta-button" href="consultation.html">Получить консультацию</a>
-    
-    <!-- Навигационное меню -->
+    <div class="marketing-shape"></div>
     <div class="nav-menu">
       <a href="services.html">Услуги</a>
       <a href="cases.html">Кейсы</a>
       <a href="free-materials.html">Бесплатные материалы</a>
     </div>
   </div>
-  
-  <!-- Инициализация Telegram Web Apps API (если понадобится) -->
-  <script>
-    if (window.Telegram && Telegram.WebApp) {
-      Telegram.WebApp.ready();
-    }
-  </script>
 </body>
 </html>
